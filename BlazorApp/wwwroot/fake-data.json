@@ -1,0 +1,223 @@
+[
+  {
+    "id": 1,
+    "displayname": "Keengen",
+    "name": "keengen",
+    "stacksize": 20,
+    "maxdurability": 82,
+    "enchantcategories": [
+      "armor_head",
+      "digger",
+      "breakable"
+    ],
+    "repairwith": [
+      "jungle_planks",
+      "birch_planks"
+    ],
+    "createddate": "2021-06-22",
+    "updateddate": "2022-03-22"
+  },
+  {
+    "id": 2,
+    "displayname": "Futurize",
+    "name": "futurize",
+    "stacksize": 53,
+    "maxdurability": 116,
+    "enchantcategories": [
+      "armor_chest",
+      "weapon"
+    ],
+    "repairwith": [
+      "spruce_planks",
+      "birch_planks"
+    ],
+    "createddate": "2015-03-19",
+    "updateddate": "2017-09-14"
+  },
+  {
+    "id": 3,
+    "displayname": "Plasto",
+    "name": "plasto",
+    "stacksize": 55,
+    "maxdurability": 117,
+    "enchantcategories": [
+      "digger"
+    ],
+    "repairwith": [
+      "crimson_planks"
+    ],
+    "createddate": "2020-08-31",
+    "updateddate": "2019-03-06"
+  },
+  {
+    "id": 4,
+    "displayname": "Centuria",
+    "name": "centuria",
+    "stacksize": 59,
+    "maxdurability": 89,
+    "enchantcategories": [
+      "weapon",
+      "armor_chest"
+    ],
+    "repairwith": [],
+    "createddate": "2014-08-26",
+    "updateddate": null
+  },
+  {
+    "id": 5,
+    "displayname": "Zentime",
+    "name": "zentime",
+    "stacksize": 16,
+    "maxdurability": 9,
+    "enchantcategories": [],
+    "repairwith": [],
+    "createddate": "2020-06-06",
+    "updateddate": null
+  },
+  {
+    "id": 6,
+    "displayname": "Biolive",
+    "name": "biolive",
+    "stacksize": 26,
+    "maxdurability": 15,
+    "enchantcategories": [],
+    "repairwith": [],
+    "createddate": "2021-07-26",
+    "updateddate": null
+  },
+  {
+    "id": 7,
+    "displayname": "Bluegrain",
+    "name": "bluegrain",
+    "stacksize": 11,
+    "maxdurability": 118,
+    "enchantcategories": [
+      "breakable",
+      "armor_head",
+      "weapon"
+    ],
+    "repairwith": [
+      "oak_planks",
+      "spruce_planks"
+    ],
+    "createddate": "2015-02-20",
+    "updateddate": "2016-12-06"
+  },
+  {
+    "id": 8,
+    "displayname": "Autograte",
+    "name": "autograte",
+    "stacksize": 41,
+    "maxdurability": 74,
+    "enchantcategories": [
+      "armor"
+    ],
+    "repairwith": [
+      "acacia_planks"
+    ],
+    "createddate": "2018-06-03",
+    "updateddate": null
+  },
+  {
+    "id": 9,
+    "displayname": "Artiq",
+    "name": "artiq",
+    "stacksize": 13,
+    "maxdurability": 82,
+    "enchantcategories": [],
+    "repairwith": [],
+    "createddate": "2022-05-17",
+    "updateddate": null
+  },
+  {
+    "id": 10,
+    "displayname": "Steeltab",
+    "name": "steeltab",
+    "stacksize": 21,
+    "maxdurability": 88,
+    "enchantcategories": [
+      "breakable",
+      "armor_chest",
+      "digger"
+    ],
+    "repairwith": [
+      "birch_planks",
+      "warped_planks"
+    ],
+    "createddate": "2020-07-03",
+    "updateddate": null
+  },
+  {
+    "id": 11,
+    "displayname": "Nebulean",
+    "name": "nebulean",
+    "stacksize": 60,
+    "maxdurability": 46,
+    "enchantcategories": [
+      "breakable",
+      "weapon",
+      "armor_chest"
+    ],
+    "repairwith": [],
+    "createddate": "2016-09-06",
+    "updateddate": "2021-04-03"
+  },
+  {
+    "id": 12,
+    "displayname": "Gushkool",
+    "name": "gushkool",
+    "stacksize": 20,
+    "maxdurability": 28,
+    "enchantcategories": [
+      "digger",
+      "digger",
+      "weapon"
+    ],
+    "repairwith": [],
+    "createddate": "2020-02-09",
+    "updateddate": null
+  },
+  {
+    "id": 13,
+    "displayname": "Dogspa",
+    "name": "dogspa",
+    "stacksize": 53,
+    "maxdurability": 118,
+    "enchantcategories": [
+      "armor_chest",
+      "armor"
+    ],
+    "repairwith": [],
+    "createddate": "2017-06-05",
+    "updateddate": "2022-04-19"
+  },
+  {
+    "id": 14,
+    "displayname": "Flum",
+    "name": "flum",
+    "stacksize": 61,
+    "maxdurability": 10,
+    "enchantcategories": [],
+    "repairwith": [
+      "acacia_planks"
+    ],
+    "createddate": "2019-10-18",
+    "updateddate": "2017-08-24"
+  },
+  {
+    "id": 15,
+    "displayname": "Urbanshee",
+    "name": "urbanshee",
+    "stacksize": 33,
+    "maxdurability": 3,
+    "enchantcategories": [
+      "armor"
+    ],
+    "repairwith": [
+      "oak_planks",
+      "acacia_planks"
+    ],
+    "createddate": "2018-09-21",
+    "updateddate": "2019-07-06"
+  }
+]
