@@ -29,8 +29,12 @@ builder.Services.AddBlazoredLocalStorage();
 
 builder.Services.AddBlazoredModal();
 
+builder.Services.AddScoped<IDataService, DataApiService>();
+
 // Add the controller of the app
 builder.Services.AddControllers();
+
+builder.Services.AddHttpClient();
 
 // Add the localization to the app and specify the resources path
 builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });

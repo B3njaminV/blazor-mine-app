@@ -1,3 +1,4 @@
+using BlazorApp.Components;
 using BlazorApp.Models;
 namespace BlazorApp.Services;
 
@@ -14,4 +15,6 @@ public interface IDataService
     Task Update(int id, ItemModel model);
     
     Task Delete(int id);
+    
+    Task<List<CraftingRecipe>> GetRecipes();
 }
