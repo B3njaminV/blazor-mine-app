@@ -1,5 +1,4 @@
 using System.Globalization;
-using BlazorApp.Data;
 using BlazorApp.Services;
 using Blazored.LocalStorage;
 using Blazored.Modal;
@@ -16,7 +15,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
 
 builder.Services.AddHttpClient();   // d�finition d'un http client  
 
