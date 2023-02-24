@@ -33,9 +33,7 @@ public class DataLocalService : IDataService
         model.Id = currentData.Max(s => s.Id) + 1;
 
         // Add the item to the current data
-        currentData.Add(ItemFactory.Create(model)); 
-
-        
+        currentData.Add(ItemFactory.Create(model));
 
         // Save the data
         await _localStorage.SetItemAsync("data", currentData);
