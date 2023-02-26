@@ -10,6 +10,8 @@ public interface IDataService
 
     Task<List<Item>> List(int currentPage, int pageSize);
     
+    Task<List<Item>> List();
+    
     Task<Item> GetById(int id);
     
     Task Update(int id, ItemModel model);

@@ -2,14 +2,47 @@
 @using BlazorApp.Models
 
 <CascadingValue Value="@this">
-    <Router AppAssembly="typeof(Program).Assembly">
-        <Found Context="routeData">
-            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        </Found>
-        <NotFound>
-            <LayoutView Layout="@typeof(MainLayout)">
-                <p>Sorry, there's nothing at this address.</p>
-            </LayoutView>
-        </NotFound>
-    </Router>
+<main class="contentInvent">
+    <div class="inventaire">
+        <h3>Inventaire</h3>
+        <div class="caseInvent">
+            @for(int i=1; i<10; i++){
+                <InventoryItem Index="i" Item=@items[i] />
+            }
+        </div>
+        <div class="actions" id="actions"></div>
+    </div>
+    
+     <div class="list-group">
+        <div class="toolSearch">
+            <label>
+                <input type="text" @bind-value="texteRecherche"/>
+            </label>
+        </div>
+
+       
+        <DataGrid TItem="Item"
+                  Data="@items"
+                  ReadData="@OnReadData"
+                  TotalItems="@totalItem"
+                  PageSize="@totalSizeByPage"
+                  @ref="dataGrid"
+                  ShowPager
+                  Responsive>
+            <DataGridColumn TItem="Item" Field="@nameof(Item.Id)">
+                <DisplayTemplate>
+                    @if (!string.IsNullOrWhiteSpace(context.ImageBase64))
+                    {
+                        <InventoryItem Item="context" NoDrop="true"></InventoryItem>
+                    }
+                    else
+                    {
+                        <img src="images/default.png" class="img-thumbnail imageList" title="@context.DisplayName" alt="@context.DisplayName"/>
+                    }
+                </DisplayTemplate>
+            </DataGridColumn>
+            <DataGridColumn TItem="Item" Field="@nameof(Item.DisplayName)"/>
+        </DataGrid>
+    </div>
+</main>
 </CascadingValue>

@@ -70,6 +70,22 @@ public class DataLocalService : IDataService
 
         return (await _localStorage.GetItemAsync<Item[]>("data")).Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
     }
+    
+    public async Task<List<Item>> List()
+    {
+        // Load data from the local storage
+        var currentData = await _localStorage.GetItemAsync<Item[]>("data");
+
+        // Check if data exist in the local storage
+        if (currentData == null)
+        {
+            // this code add in the local storage the fake data
+            var originalData = await _http.GetFromJsonAsync<Item[]>($"{_navigationManager.BaseUri}fake-data.json");
+            await _localStorage.SetItemAsync("data", originalData);
+        }
+
+        return (await _localStorage.GetItemAsync<Item[]>("data")).ToList();
+    }
 
     public async Task<Item> GetById(int id)
     {

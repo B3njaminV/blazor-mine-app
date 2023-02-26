@@ -31,7 +31,12 @@ public class DataApiService : IDataService
     {
         return await _http.GetFromJsonAsync<List<Item>>($"https://localhost:7234/api/Crafting/?currentPage={currentPage}&pageSize={pageSize}");
     }
-    
+
+    public async Task<List<Item>> List()
+    {
+        return await _http.GetFromJsonAsync<List<Item>>($"https://localhost:7234/api/Crafting/all");
+    }
+
     public async Task<Item> GetById(int id)
     {
         return await _http.GetFromJsonAsync<Item>($"https://localhost:7234/api/Crafting/{id}");
