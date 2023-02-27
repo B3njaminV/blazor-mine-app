@@ -6,7 +6,20 @@
 
   [![Build Status](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
   [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://codefirst.iut.uca.fr/git/benjamin.valleix/blazor-minecraft-app)
-  [![License: Copyright](https://img.shields.io/badge/License-Copyright-yellow.svg)](https://img.shields.io/badge/License-Copyright-yellow.svg)   
+  [![License: Copyright](https://img.shields.io/badge/License-Copyright-yellow.svg)](https://img.shields.io/badge/License-Copyright-yellow.svg)  
+
+  [![Bugs](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=bugs&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app) 
+  [![Code Smells](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=code_smells&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Coverage](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=coverage&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Duplicated Lines (%)](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=duplicated_lines_density&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Lines of Code](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=ncloc&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Maintainability Rating](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=sqale_rating&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Quality Gate Status](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=alert_status&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Reliability Rating](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=reliability_rating&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Security Hotspots](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=security_hotspots&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Security Rating](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=security_rating&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Technical Debt](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=sqale_index&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
+  [![Vulnerabilities](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=blazor-mine-app&metric=vulnerabilities&token=b5fbf7226ccb11f453d3b002c15902a6df418dbb)](https://codefirst.iut.uca.fr/sonar/dashboard?id=blazor-mine-app)
 </p>
 
 ---
