@@ -6,7 +6,7 @@
 
   [![Build Status](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
   [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://codefirst.iut.uca.fr/git/benjamin.valleix/blazor-minecraft-app)
-  [![License: Copyright](https://img.shields.io/badge/License-Copyright-yellow.svg)](https://img.shields.io/badge/License-Copyright-yellow.svg) 
+  [![License: Copyright](https://img.shields.io/badge/License-Copyright-yellow.svg)](https://img.shields.io/badge/License-Copyright-yellow.svg)  
 </p>
 
 ---
