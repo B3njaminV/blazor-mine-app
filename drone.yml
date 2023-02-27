@@ -14,18 +14,18 @@ steps:
         path: /docs
     commands:
       - cd Sources/
-      - dotnet restore UnVentDeTerre.sln
-      - dotnet build UnVentDeTerre.sln -c Release --no-restore
-      - dotnet publish UnVentDeTerre.sln -c Release --no-restore -o CI_PROJECT_DIR/build/release
+      - dotnet restore BlazorApp.sln
+      - dotnet build BlazorApp.sln -c Release --no-restore
+      - dotnet publish BlazorApp.sln -c Release --no-restore -o CI_PROJECT_DIR/build/release
 
   - name: code-analysis
     image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dronesonarplugin-dotnet6
     commands:
       - cd Sources/
-      - dotnet restore UnVentDeTerre.sln
-      - dotnet sonarscanner begin /k:"Un-vent-de-terre" /d:sonar.host.url=$${PLUGIN_SONAR_HOST} /d:sonar.login=$${PLUGIN_SONAR_TOKEN} 
-      - dotnet build UnVentDeTerre.sln -c Release --no-restore
-      - dotnet publish UnVentDeTerre.sln -c Release --no-restore -o CI_PROJECT_DIR/build/release
+      - dotnet restore BlazorApp.sln
+      - dotnet sonarscanner begin /k:"BlazorApp" /d:sonar.host.url=$${PLUGIN_SONAR_HOST} /d:sonar.login=$${PLUGIN_SONAR_TOKEN} 
+      - dotnet build BlazorApp.sln -c Release --no-restore
+      - dotnet publish BlazorApp.sln -c Release --no-restore -o CI_PROJECT_DIR/build/release
       - dotnet sonarscanner end /d:sonar.login=$${PLUGIN_SONAR_TOKEN}
     secrets: [ SECRET_SONAR_LOGIN ]
     settings:
