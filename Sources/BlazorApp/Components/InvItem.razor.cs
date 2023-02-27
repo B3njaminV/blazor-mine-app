@@ -23,6 +23,6 @@ public partial class InvItem
         action.action = "Drag Enter";
         action.item = this.item;
         action.index = this.index;
-        ///inventaire.ObservableListOfActions.Add(action);
+        //inventaire.ObservableListOfActions.Add(action);
     }
 }
