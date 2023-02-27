@@ -12,7 +12,7 @@
 ---
 
 🏠 [Homepage](https://codefirst.iut.uca.fr/git/benjamin.valleix/blazor-minecraft-app) |
-📰 [Wiki](https://codefirst.iut.uca.fr/git/benjamin.valleix/blazor-minecraft-app/wiki) | 
+📰 [Wiki](https://codefirst.iut.uca.fr/git/benjamin.valleix/blazor-minecraft-app/wiki) |  
 
 ---
 
