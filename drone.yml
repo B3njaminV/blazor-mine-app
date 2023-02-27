@@ -23,7 +23,7 @@ steps:
     commands:
       - cd Sources/
       - dotnet restore BlazorApp.sln
-      - dotnet sonarscanner begin /k:"BlazorApp" /d:sonar.host.url=$${PLUGIN_SONAR_HOST} /d:sonar.login=$${PLUGIN_SONAR_TOKEN} 
+      - dotnet sonarscanner begin /k:"blazor-mine-app" /d:sonar.host.url=$${PLUGIN_SONAR_HOST} /d:sonar.login=$${PLUGIN_SONAR_TOKEN} 
       - dotnet build BlazorApp.sln -c Release --no-restore
       - dotnet publish BlazorApp.sln -c Release --no-restore -o CI_PROJECT_DIR/build/release
       - dotnet sonarscanner end /d:sonar.login=$${PLUGIN_SONAR_TOKEN}
