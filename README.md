@@ -61,14 +61,29 @@ MinecraftApp est notre application de fin de projet de Licence professionnelle d
 
 ### Inventory 
 
-Represents inventory in application 
-It contains collection of items and user actions
-An action is displayed when user do an action on item list
+* Represents inventory in application 
+* Contains collection of items and user actions
+
+> An action is displayed when user do an action on item list
+
+## ListItem 
+
+* Represents item list in application
+* Contains collection of InventoryListItem
 
 ## InventoryItem
 
-Represents item in inventory
+* Represents item in inventory
+* Contains item details and image
 
+> User can drag an item to inventory, the item quantity will up if one exist
+
+## InventoryListItem
+
+* Represents item in list
+* Contains item details and image
+
+> User can access and search in item list
 
 ## 💻 Run application
 
