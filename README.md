@@ -30,7 +30,7 @@
 ---
 
 ## 📣 Introduction 
-Mine App est notre application de fin de projet de Licence professionnelle dans le cadre de l'apprentissage du framework web Blazor !!
+Mine App is our Professional License end-of-project app for learning the Blazor web framework!!
 
 ## 📍 Prerequisites
 
@@ -80,7 +80,7 @@ Mine App est notre application de fin de projet de Licence professionnelle dans 
 
 ## InventoryListItem
 
-* Represents item in list
+* Represents item in inventory list
 * Contains item details and image
 
 > User can access and search in item list
