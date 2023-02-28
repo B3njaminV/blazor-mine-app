@@ -47,9 +47,8 @@ MinecraftApp est notre application de fin de projet de Licence professionnelle d
 - [x] Globalization & Localization
 - [x] Razor Component
 - [x] API
-- [ ] Use the logs
-- [ ] Deploy Apps
-- [ ] Your next steps
+- [x] Use the logs
+- [x] Your next steps
 
 ## 💻 Run application
 
