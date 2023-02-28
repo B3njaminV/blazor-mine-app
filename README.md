@@ -30,11 +30,11 @@
 ---
 
 ## 📣 Introduction 
-MinecraftApp est notre application de fin de projet de Licence professionnelle dans le cadre de l'apprentissage du language Blazor !!
+MinecraftApp est notre application de fin de projet de Licence professionnelle dans le cadre de l'apprentissage du framework web Blazor !!
 
 ## 📍 Prerequisites
 
-- C# .NET Core 6.0
+- [ASP.NET Core 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 ## ⚙️ Roadmap
 
@@ -51,6 +51,36 @@ MinecraftApp est notre application de fin de projet de Licence professionnelle d
 - [ ] Deploy Apps
 - [ ] Your next steps
 
+## 💻 Run application
+
+### Clone project
+
+```sh
+git clone https://codefirst.iut.uca.fr/git/benjamin.valleix/blazor-mine-app.git
+```
+
+### Build projects
+
+```sh
+dotnet build Sources
+```
+
+### Run projects (in terminal separally)
+
+```sh
+dotnet run --project Sources/BlazorApp
+dotnet run --project Sources/Minecraft.Crafting.Api
+```
+
+### Run projects (in IDE)
+
+#### Visual Studio
+
+https://learn.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2022
+
+#### Rider
+
+https://www.jetbrains.com/help/rider/Run_Debug_Multiple.html
 
 ## ✍️ Author
 
