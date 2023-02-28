@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -43,10 +44,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
     <Content Include="Components\Inventory.razor.js" />
     <Content Update="Components\Inventory.razor.css">
       <DependentUpon>Inventory.razor</DependentUpon>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minecraft.Crafting.Api\Minecraft.Crafting.Api.csproj" />
   </ItemGroup>
 
 </Project>

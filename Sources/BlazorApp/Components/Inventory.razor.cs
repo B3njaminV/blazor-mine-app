@@ -4,6 +4,8 @@ using BlazorApp.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using BlazorApp.Models;
+using Minecraft.Crafting.Api.Models;
+using Item = BlazorApp.Models.Item;
 
 namespace BlazorApp.Components;
 
@@ -20,6 +22,8 @@ public partial class Inventory
 
     [Inject]
     internal IJSRuntime JavaScriptRuntime { get; set; }
+    
+    public List<InventoryModel> InventoryContent { get; set; } = Enumerable.Range(1, 18).Select(_ => new InventoryModel()).ToList();
     
     public Inventory()
     {
