@@ -1,0 +1,17 @@
+﻿<EditForm Model="this">
+<InputText id="search" @bind-Value="TextValue" />
+<button @onclick="Search">Rechercher</button>
+</EditForm>
+
+@foreach (var item in ItemsShow)
+{
+    <InventoryListItem Item="item" NoDrop="true"/>
+}
+
+<div class="row align-items-center">
+    <button class="col-auto" @onclick="() => Pagination(false, 2)">@(numPage-2 >= 1 ? numPage-2 : null)</button>
+    <button class="col-auto" @onclick="() => Pagination(false)">@(numPage-1 >= 1 ? numPage-1 : null)</button>
+    <p class="col-auto">@numPage</p>
+    <button class="col-auto" @onclick="() => Pagination(true)">@(numPage+1 <= nbPage ? numPage+1 : null)</button>
+    <button class="col-auto" @onclick="() => Pagination(true, 2)">@(numPage+2 <= nbPage ? numPage+2 : null)</button>
+</div>
