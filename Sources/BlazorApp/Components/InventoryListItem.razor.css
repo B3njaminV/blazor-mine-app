@@ -1,0 +1,9 @@
+﻿.item {
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    overflow: hidden;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}

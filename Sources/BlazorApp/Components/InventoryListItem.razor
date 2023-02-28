@@ -1,0 +1,25 @@
+﻿<div
+    class="item"
+    ondragover="event.preventDefault();"
+    draggable="true"
+    @ondragstart="@OnDragStart"
+    @ondrop="@OnDrop"
+    @ondragenter="@OnDragEnter"
+    @ondragleave="@OnDragLeave">
+
+    @if (!string.IsNullOrWhiteSpace(Item.ImageBase64))
+    {
+        <img src="data:image/png;base64, @(Item.ImageBase64)" class="img-thumbnail" title="@Item.DisplayName" alt="@Item.DisplayName" style="min-height: 40px; max-height: 75px" />
+    }
+    else
+    {
+        <img src="images/default.png" class="img-thumbnail" title="@Item.DisplayName" alt="@Item.DisplayName" style="max-height: 75px"/>
+    }
+
+
+    @if (Item != null)
+    {
+        @Item.DisplayName
+    }
+
+</div>
