@@ -7,17 +7,20 @@
     @ondragenter="@OnDragEnter"
     @ondragend="@OnDragEnd">
 
-    @if (Item is not null)
+    @if (Item != null)
     {
         @if (!string.IsNullOrWhiteSpace(Item.ImageBase64))
         {
-            <img src="data:image/png;base64, @(Item.ImageBase64)" class="image" title="@Item.DisplayName" alt="@Item.DisplayName"/>
+            <img src="data:image/png;base64, @(Item.ImageBase64)" class="img-thumbnail" title="@Item.DisplayName" alt="@Item.DisplayName"/>
         }
         else
         {
-            <div class="image">
-                @Item.DisplayName
-            </div>
+            <img src="images/default.png" class="img-thumbnail" title="@Item.DisplayName" alt="@Item.DisplayName" style="max-height: 75px"/>
         }
+        <p>@Item.DisplayName (@Parent.CurrentStackSize)</p>
+    }
+    else
+    {
+        <p>Empty</p>
     }
 </div>

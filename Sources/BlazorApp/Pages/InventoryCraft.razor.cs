@@ -1,6 +1,7 @@
 using BlazorApp.Models;
 using BlazorApp.Services;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
 
 namespace BlazorApp.Pages;
 
@@ -8,6 +9,9 @@ public partial class InventoryCraft
 {
     [Inject]
     public IDataService DataService { get; set; }
+    
+    [Inject]
+    public IStringLocalizer<InventoryCraft> Localizer { get; set; }
 
     public List<Item> Items { get; set; } = new List<Item>();
 

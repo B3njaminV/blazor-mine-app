@@ -1,6 +1,5 @@
 using BlazorApp.Models;
 using Microsoft.AspNetCore.Components;
-using BlazorApp.Models;
 
 namespace BlazorApp.Components;
 
@@ -22,7 +21,6 @@ public partial class InventoryItem
         {
             return;
         }
-
         isOutSide = false;
         Parent.Actions.Add(new ItemAction { Action = "Drag Enter", Item = this.Item, Index = this.Index });
     }
@@ -33,7 +31,6 @@ public partial class InventoryItem
         {
             return;
         }
-
         isOutSide = true;
         Parent.Actions.Add(new ItemAction { Action = "Drag Leave", Item = this.Item, Index = this.Index });
     }
@@ -48,7 +45,7 @@ public partial class InventoryItem
             this.Item = null;
         }
     }
-
+    
     internal void OnDrop()
     {
         if (NoDrop)
@@ -56,16 +53,30 @@ public partial class InventoryItem
             return;
         }
 
-        this.Item = Parent.CurrentItem;
-        Parent.InventoryItems[this.Index] = this.Item;
+        this.Item = Parent.CurrentDragItem;
+
+        if (Parent.InventoryItems[this.Index]== this.Item) { 
+            Parent.CurrentStackSize += 1;
+        }
+        else{
+            Parent.CurrentStackSize = 1;
+            Parent.InventoryItems[this.Index] = this.Item;
+        }
 
         Parent.Actions.Add(new ItemAction { Action = "Drop", Item = this.Item, Index = this.Index });
+        
+        Parent.CheckInventory();
     }
 
     private void OnDragStart()
     {
-        Parent.CurrentItem = this.Item;
+        Parent.CurrentDragItem = this.Item;
+        if (this.Index != -1)
+        {
+            Parent.InventoryItems[this.Index] = null;
+        }     
 
         Parent.Actions.Add(new ItemAction { Action = "Drag Start", Item = this.Item, Index = this.Index });
     }
+    
 }
