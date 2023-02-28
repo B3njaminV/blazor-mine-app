@@ -7,8 +7,8 @@
     @ondragenter="@OnDragEnter"
     @ondragleave="@OnDragLeave">
 
-    @if (Item != null)
-    {
-        <img src="data:image/png;base64, @(Item.ImageBase64)" class="img-thumbnail" title="@Item.DisplayName" alt="@Item.DisplayName" style="min-width: 50px; max-width: 100px" />
-    }
+    @if (Item is not null)
+        {
+            @Item.DisplayName
+        }
 </div>

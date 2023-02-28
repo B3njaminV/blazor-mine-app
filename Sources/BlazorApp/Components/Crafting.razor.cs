@@ -12,16 +12,15 @@ public partial class Crafting
 
     public Crafting()
     {
-        Actions = new ObservableCollection<CraftingAction>();
+        Actions = new ObservableCollection<ItemAction>();
         Actions.CollectionChanged += OnActionsCollectionChanged;
         this.RecipeItems = new List<Item> { null, null, null, null, null, null, null, null, null };
     }
 
-    public ObservableCollection<CraftingAction> Actions { get; set; }
+    public ObservableCollection<ItemAction> Actions { get; set; }
     public Item CurrentDragItem { get; set; }
 
-    [Parameter]
-    public List<Item> Items { get; set; }
+    [Parameter] public List<Item> Items { get; set; }
 
     public List<Item> RecipeItems { get; set; }
 
@@ -40,8 +39,7 @@ public partial class Crafting
         }
     }
 
-    [Parameter]
-    public List<CraftingRecipe> Recipes { get; set; }
+    [Parameter] public List<CraftingRecipe> Recipes { get; set; }
 
     /// <summary>
     /// Gets or sets the java script runtime.
@@ -56,14 +54,14 @@ public partial class Crafting
         // Get the current model
         var currentModel = string.Join("|", this.RecipeItems.Select(s => s != null ? s.Name : string.Empty));
 
-        this.Actions.Add(new CraftingAction { Action = $"Items : {currentModel}" });
+        this.Actions.Add(new ItemAction { Action = $"Items : {currentModel}" });
 
         foreach (var craftingRecipe in Recipes)
         {
             // Get the recipe model
             var recipeModel = string.Join("|", craftingRecipe.Have.SelectMany(s => s));
 
-            this.Actions.Add(new CraftingAction { Action = $"Recipe model : {recipeModel}" });
+            this.Actions.Add(new ItemAction { Action = $"Recipe model : {recipeModel}" });
 
             if (currentModel == recipeModel)
             {

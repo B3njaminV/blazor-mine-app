@@ -1,0 +1,19 @@
+﻿.item {
+    width: 64px;
+    height: 64px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.image {
+    width: 64px;
+    height: 64px;
+}
+
+.stack {
+    position: absolute;
+    z-index: 99;
+    margin-left: 44px;
+    margin-top: -24px;
+    font-weight: bold;
+}

@@ -1,0 +1,57 @@
+﻿<CascadingValue Value="@this">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>Actions</div>
+                <div class="actions" id="actions">
+                    @foreach (var action in Actions)
+                    {
+                        <p>@action.Action </p>
+                    }
+                </div>
+            </div>
+            <div class="col-6">
+
+                <div>Available items:</div>
+                <div>
+                    <div class="css-grid">
+
+                        @foreach (var item in Items)
+                        {
+                            <InventoryItem Item="item" NoDrop="true" />
+                        }
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-6">
+                <div>Inventory</div>
+
+                <div>
+
+                    <div class="css-inv">
+                        <InventoryItem Index="0" />
+                        <InventoryItem Index="1" />
+                        <InventoryItem Index="2" />
+                        <InventoryItem Index="3" />
+                        <InventoryItem Index="4" />
+                        <InventoryItem Index="5" />
+                        <InventoryItem Index="6" />
+                        <InventoryItem Index="7" />
+                        <InventoryItem Index="8" />
+                        <InventoryItem Index="9" />
+                        <InventoryItem Index="10" />
+                        <InventoryItem Index="11" />
+                        <InventoryItem Index="12" />
+                        <InventoryItem Index="13" />
+                        <InventoryItem Index="14" />
+                        <InventoryItem Index="15" />
+                        <InventoryItem Index="16" />
+                        <InventoryItem Index="17" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</CascadingValue>

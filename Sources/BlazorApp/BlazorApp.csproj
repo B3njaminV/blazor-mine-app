@@ -42,4 +42,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <_JsFileModuleStaticWebAsset Include="Components\Inventory.razor.js" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,27 @@
+<div class="item"
+     ondragover="event.preventDefault();"
+     draggable="true"
+     @ondragstart="@OnDragStart"
+     @ondrop="@OnDrop"
+     @ondragenter="@OnDragEnter"
+     @ondragleave="@OnDragLeave"
+     @ondragend="@OnDragEnd">
+
+    @if (Item is not null)
+    {
+        @if (!string.IsNullOrWhiteSpace(Item.ImageBase64) && !Item.ImageBase64.Equals("iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG+SURBVDhPpVM9LENRFD73/bSqarZUYrIamhgIlkpN9kZHVhJhEZqSLiysjKq7rVFD2zA0DFaThMWsqP68d53vvt4XWlKJL3nvnZxzvnvPOd95gn6BTKeN9+v7EdiDU+PPIpNxVaALPQc0Z1MxKdxNEjIhSEQ8r6yRFIWWSwfhytmN5/PgHyDZbs4lM2xu0XDEaE9PkjM2qmLmwyNZV1Wil5prEGWtUj7NRKZ8OaA1l9yVQmy34jPUWEmRDIU6EQ+iXqfgcY7sYpmLk3t2Kb+j/Hh5ZTvV9vys8bG6QuL1jeRQGCEf2jdwdEzWRdkV0pwMlE9vuSKuBT1z2bgZiYPraQqe5BQRgA0fYshBruIwDEwbA0PPKBu3tGMTFDgvKCIe2PAhhhzkggOuBalsMiN6YEBjeUl9QQSaiwnfBzhjUbJZIXBVC/+BgSWRrDOk0tBl42Y8uh0N8+GJNZQ1cA21Ybwk0BlSYVDW7Z1fNh7Y8CGGHLUTzAH3u4xxlnGtj4yHLGOxS0YY/MnalxWVQOYPo2EfdgA5jGyH02+VoyqGnvuusgbaIeFsSEEL+mfCwFTP0tjXN2v0HKDxt9+Z6BNwu/cBZyM3gQAAAABJRU5ErkJggg=="))
+        {
+            <img src="data:image/png;base64, @(Item.ImageBase64)" class="image" title="@Item.DisplayName" alt="@Item.DisplayName" />
+        }
+        else
+        {
+            <div class="image">
+                @Item.DisplayName
+            </div>
+        }
+        <div class="stack">
+            @Item.StackSize
+        </div>
+    }
+</div>
+
