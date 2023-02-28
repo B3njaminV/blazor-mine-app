@@ -51,6 +51,26 @@ MinecraftApp est notre application de fin de projet de Licence professionnelle d
 - [ ] Deploy Apps
 - [ ] Your next steps
 
+## 💡 Features
+
+* Add an item in inventory
+* Remove an item from inventory 
+* Search an item in item list
+* Access to any item in item list
+
+## 🚧 Structure 
+
+### Inventory 
+
+Represents inventory in application 
+It contains collection of items and user actions
+An action is displayed when user do an action on item list
+
+## InventoryItem
+
+Represents item in inventory
+
+
 ## 💻 Run application
 
 ### Clone project
