@@ -31,32 +31,16 @@ public partial class Inventory
     [Inject]
     internal IJSRuntime JavaScriptRuntime { get; set; }
     
-    [Parameter]
-    public List<CraftingRecipe> Recipes { get; set; }
-
-    public Item RecipeResult
-    {
-        get => recipeResult;
-        set
-        {
-            if (recipeResult == value)
-            {
-                return;
-            }
-            recipeResult = value;
-        }
-    }
-    
     public Inventory()
     {
         Actions = new ObservableCollection<ItemAction>();
         Actions.CollectionChanged += OnActionsCollectionChanged;
         this.InventoryItems = new ObservableCollection<Item> { null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
+        InventoryItems.CollectionChanged += OnItemCollectionChanged;
     }
     
     public void CheckInventory()
     {
-        RecipeResult = null;
         var currentModel = string.Join("|", this.InventoryItems.Select(s => s != null ? s.Name : string.Empty));
         this.Actions.Add(new ItemAction { Action = $"Items : {currentModel}" });
     }
@@ -65,4 +49,10 @@ public partial class Inventory
     {
         JavaScriptRuntime.InvokeVoidAsync("Crafting.AddActions", e.NewItems);
     }
+
+    private void OnItemCollectionChanged(object? sender, NotifyCollectionChangedEventArgs e)
+    {
+        this.StateHasChanged();
+    }
+    
 }

@@ -30,7 +30,7 @@
 ---
 
 ## 📣 Introduction 
-MinecraftApp est notre application de fin de projet de Licence professionnelle dans le cadre de l'apprentissage du framework web Blazor !!
+Mine App est notre application de fin de projet de Licence professionnelle dans le cadre de l'apprentissage du framework web Blazor !!
 
 ## 📍 Prerequisites
 
