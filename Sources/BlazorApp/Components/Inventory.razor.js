@@ -1,4 +1,4 @@
-window.Crafting =
+﻿window.Crafting =
     {
         AddActions: function (data) {
 

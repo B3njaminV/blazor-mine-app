@@ -1,0 +1,19 @@
+﻿.css-grid {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 10px;
+    display: grid;
+    width: 286px;
+}
+
+.css-inv {
+    grid-template-columns: repeat(6,minmax(0,1fr));
+    gap: 10px;
+    display: grid;
+    width: 424px;
+}
+
+.actions {
+    border: 1px solid black;
+    height: 250px;
+    overflow: scroll;
+}
